@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Hamster from "./icons/Hamster";
-import { FaPlus  } from "react-icons/fa6";
+// import { FaPlus  } from "react-icons/fa6";
 import {
   binanceLogo,
   dailyCipher,
@@ -208,7 +208,7 @@ const App: React.FC = () => {
                       {formatProfitPerHour(profitPerHour)}
                     </p>
                 <div className="bg-[#aab] rounded-full p-2">
-                <FaPlus size={30}/>
+                {/* <FaPlus size={30}/> */}
                     </div>
   
               </div>

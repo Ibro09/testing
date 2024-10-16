@@ -63,3 +63,15 @@
     transform: translateY(-50px);
   }
 }
+
+.zindex{
+  z-index: 10;
+}
+.btn {
+   background: #00035c;
+   color: white;
+   box-shadow: 2px 0 2px #010357;
+}
+
+.bg{
+  background: linear-gradient(to bottom, #ef8989, #9692dd, #ffffff);}

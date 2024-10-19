@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-import { FaCopy, FaUserFriends } from "react-icons/fa";
-import { AiOutlineUserAdd } from "react-icons/ai";
+// import { FaCopy, FaUserFriends } from "react-icons/fa";
+// import { AiOutlineUserAdd } from "react-icons/ai";
 
 const Wallet: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
@@ -36,7 +36,7 @@ const Wallet: React.FC = () => {
               </button>
               <div className='main-button copy ml-1'>
                 <div className='upper'>
-                  <FaCopy />
+                  {/* <FaCopy /> */}
                 </div>
                 <div className='lower'></div>
               </div>
@@ -56,21 +56,21 @@ const Wallet: React.FC = () => {
               <div className='txt font-normal mb-'>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />
+                    {/* <AiOutlineUserAdd size={20} /> */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>

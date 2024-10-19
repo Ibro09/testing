@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-import { FaCopy, FaUserFriends } from "react-icons/fa";
-import { TiUserAdd } from "react-icons/ti";
-import { AiOutlineUserAdd } from "react-icons/ai";
-import { FaPlus } from "react-icons/fa";
+// import { FaCopy, FaUserFriends } from "react-icons/fa";
+// import { TiUserAdd } from "react-icons/ti";
+// import { AiOutlineUserAdd } from "react-icons/ai";
+// import { FaPlus } from "react-icons/fa";
 import {
   binanceLogo,
-  dailyCipher,
-  dailyCombo,
-  dailyReward,
+
   dollarCoin,
-  hamsterCoin,
-  mainCharacter,
+
 } from "../images";
 
 import Footer from "../components/Footer";
@@ -55,7 +52,7 @@ const Friends: React.FC = () => {
                 />
                 <p className='text-[16px] tracking-widest'>4</p>
                 <div className='bg-[#aaa] rounded-full p-2'>
-                  <FaPlus size={10} />
+                  {/* <FaPlus size={10} /> */}
                 </div>
               </div>
             </div>
@@ -72,7 +69,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -98,7 +95,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -123,7 +120,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -160,7 +157,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -185,7 +182,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -210,7 +207,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -235,7 +232,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -260,7 +257,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -285,7 +282,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -310,7 +307,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -346,7 +343,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -371,7 +368,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -396,7 +393,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -421,7 +418,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -446,7 +443,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -471,7 +468,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>
@@ -496,7 +493,7 @@ const Friends: React.FC = () => {
                   <div className='txt font-normal'>
                     <div className='flex justify-between items-center'>
                       <div className='flex gap-2 items-center'>
-                        <AiOutlineUserAdd size={20} />
+                        {/* <AiOutlineUserAdd size={20} /> */}
                         <div className='txt font-normal px-4 '>
                           <p className='text-[17px] max-w-100'>Follow Sonic</p>
                           <p className='text-[#ddd] text-[14px] '>+750</p>

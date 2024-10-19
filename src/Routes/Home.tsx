@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-import { FaPlus } from "react-icons/fa";
+// import { FaPlus } from "react-icons/fa";
 import { binanceLogo, dollarCoin, hamsterCoin } from "../images";
 import Mine from "../icons/Mine";
 import Friends from "../icons/Friends";
@@ -186,7 +186,7 @@ const App: React.FC = () => {
                 />
                 <p className='text-[16px] tracking-widest'>4</p>
                 <div className='bg-[#aaa] rounded-full p-2'>
-                  <FaPlus size={10} />
+                  {/* <FaPlus size={10} /> */}
                 </div>
               </div>
             </div>

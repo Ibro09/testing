@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-import { FaCopy, FaUserFriends } from "react-icons/fa";
+// import { FaCopy, FaUserFriends } from "react-icons/fa";
 import { TiUserAdd } from "react-icons/ti";
-import { AiOutlineUserAdd } from "react-icons/ai";
+// import { AiOutlineUserAdd } from "react-icons/ai";
 import Footer from "../components/Footer";
 
 const Friends: React.FC = () => {
@@ -38,7 +38,7 @@ const Friends: React.FC = () => {
               </button>
               <div className='main-button copy ml-1'>
                 <div className='upper'>
-                  <FaCopy />
+                  {/* <FaCopy /> */}
                 </div>
                 <div className='lower'></div>
               </div>
@@ -58,63 +58,63 @@ const Friends: React.FC = () => {
               <div className='txt font-normal'>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />
+                    {/* <AiOutlineUserAdd size={20} /> */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} /> */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />
+                    {/* <AiOutlineUserAdd size={20} /> */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />
+                    {/* <AiOutlineUserAdd size={20} /> */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    <AiOutlineUserAdd size={20} />{" "}
+                    {/* <AiOutlineUserAdd size={20} />{" "} */}
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>

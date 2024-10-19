@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 
 import { Wheel } from "react-custom-roulette";
-import { FaPlus, FaTimes } from "react-icons/fa";
+// import { FaPlus, FaTimes } from "react-icons/fa";
 
 const Spin: React.FC = () => {
   const [mustSpin, setMustSpin] = useState(false);
@@ -83,13 +83,13 @@ const Spin: React.FC = () => {
               </button>
               <button className='main-button bubblegum-sans copy'>
                 <div className='upper gap-3'>
-                  <FaPlus></FaPlus>
+                  {/* <FaPlus></FaPlus> */}
                 </div>
                 <div className='lower'></div>
               </button>
             </div>
             <div>
-              <FaTimes size={20} />
+              {/* <FaTimes size={20} /> */}
             </div>
           </div>
           <p>{showtxt ? `${data[prizeNumber].txt}` : ""}</p>

@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />}/>
         <Route path="/friend" element={<Friend />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/spin" element={<Spin />} />

@@ -1,3 +1,74 @@
+/* Include Google Fonts link for fonts hosted on Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bubblegum+Sans&family=Fredoka+One&family=Quicksand:wght@400;600&family=Luckiest+Guy&family=Baloo+Bhai+2&family=Pacifico&family=Lobster&family=Chewy&family=Pangolin&family=Amatic+SC:wght@400;700&display=swap');
+
+/* 1. Comic Sans */
+.comic-sans {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* 2. Bubblegum Sans */
+.bubblegum-sans {
+  font-family: 'Bubblegum Sans', cursive;
+   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.534), -.5px 0 0 black, .5px 0 0 black, 0 -.5px 0 black;
+   letter-spacing: 1.3px;
+}
+
+/* 3. Bangers */
+.bangers {
+  font-family: 'Bangers', cursive;
+}
+
+/* 4. Fredoka One */
+.fredoka-one {
+  font-family: 'Fredoka One', cursive;
+}
+
+/* 5. Quicksand */
+.quicksand {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400; /* Can adjust to 600 for bolder text */
+}
+
+/* 6. Luckiest Guy */
+.luckiest-guy {
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+}
+
+/* 7. Baloo Bhai */
+.baloo-bhai {
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* 8. Pacifico */
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+/* 9. Lobster */
+.lobster {
+  font-family: 'Lobster', cursive;
+}
+
+/* 10. Chewy */
+.chewy {
+  font-family: 'Chewy', cursive;
+}
+
+/* 11. Pangolin */
+.pangolin {
+  font-family: 'Pangolin', cursive;
+}
+
+/* 12. Amatic SC */
+.amatic-sc {
+  font-family: cursive;
+  font-weight: 400; /* Adjust to 700 for bold variant */
+}
+
+
+
+
 .progress-gradient {
   background: linear-gradient(to right, #90ef89, #d692dd, #726edd);
 }
@@ -68,10 +139,129 @@
   z-index: 10;
 }
 .btn {
-   background: #00035c;
-   color: white;
+   background: rgb( 255,  215, 0);
+   color: #010357;
    box-shadow: 2px 0 2px #010357;
 }
-
+.main-button {
+    width: 60vw;
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+    padding: 0;
+    border: 3px solid #2E2C2C;
+    position: relative;
+}
+.main-button {
+    height: 40px;
+    font-size: 20px;
+  border: 2.5px solid rgba(0, 0, 0, 0.778);
+      transition: all .1s cubic-bezier(.35,1.75,.75,1);
+    border-radius: 10px;
+    /* background: linear-gradient(45deg, #fcca00 65%, #debd01 40%); */
+overflow: hidden;
+color: #ffffff;
+}
 .bg{
-  background: linear-gradient(to bottom, #ef8989, #9692dd, #ffffff);}
+  /* background: linear-gradient(to bottom, #060000 30%, purple , rgb(1, 1, 143)); */
+  background: url("./images/sonicbg.jpg");
+  background-position: 0%;
+  background-repeat:no-repeat ;
+}
+
+.upper{
+   background: linear-gradient(45deg, #eecb08 65%, #FCD800 40%);
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 3;
+  position: fixed;
+  top:0;
+}
+
+.lower{
+   background:#DC7415;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  top:0;
+}
+
+.tb{
+   text-shadow: 0 1px 0 #eecb08;
+}
+.copy{
+  width:40px;
+}
+.spin{
+  width:auto;
+  max-width: 120px;
+  min-width: 100px;
+}
+.morespin{
+  width:auto;
+  max-width: 170px;
+  min-width: 170px;
+}
+.bg-item{
+background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);  
+}
+.btn-upper{
+     background: linear-gradient(45deg, #2327ff 65%, #0004fb  40%);
+}
+.btn-lower{
+     background:  #0003c0 
+}
+.home-upper{
+   background: linear-gradient(45deg, #eecb08 65%, #FCD800 40%);
+}
+.btn-lower{
+     background:  #0003c0 
+}
+.main-button.task {
+  width: auto;
+  padding: 10px;
+}
+.txt{
+  line-height: 22px;
+}
+
+.grass {
+    transition: all .1s cubic-bezier(.35,1.75,.75,1);
+    background-image: url(./images/grass.png);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    background-position: bottom;
+}
+
+.app-moon {
+}
+
+.app-moon {
+    position: absolute;
+  top:30px;
+  right: 30px;
+  z-index: 0;
+  height: 100px;
+  width: 100px;
+  /* border: 2px solid red; */
+}
+.app-moon img{
+  height: 100%;
+  width:100%;
+  z-index: -1;
+}
+
+.footer{
+  background-color:#575cef78;
+  backdrop-filter: blur(10px);
+  
+}
+
+.otherbg{
+  background: #010357;
+}

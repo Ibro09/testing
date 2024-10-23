@@ -147,7 +147,7 @@ const App: React.FC = () => {
   }, [remPoints]);
 
   return (
-    <div className='flex justify-center overflow-x-hidden'>
+    <div className='flex justify-center overflow-hidden'>
       <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg'>
         <div className='mt-3'>
           <div className='flex justify-between '>
@@ -190,7 +190,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=' flex items-center justify-center mt-10'>
+        <div className=' flex items-center justify-center mt-10 fixed bottom-20 pb-5'>
           <div
             className='w-[250px] flex items-center justify-center'
             onClick={handleCardClick}>

@@ -190,18 +190,18 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=' flex items-center justify-center mt-10 fixed bottom-20 pb-5'>
+        <div className=' flex items-center justify-center mt-10 fixed bottom-20 pb-5 fixed w-full'>
           <div
             className='w-[250px] flex items-center justify-center'
             onClick={handleCardClick}>
             <img
               src={sonic}
               alt=''
-              style={{ width: "150px" }}
+              style={{ width: "200px" }}
             />
           </div>
         </div>
-        <div className='flex items-center gap-2 fixed bottom-20 pb-2'>
+        <div className='flex items-center gap-2 fixed bottom-20 pb-2 '>
           <img
             src={dollarCoin}
             alt=''
@@ -221,7 +221,7 @@ const App: React.FC = () => {
               alt=''
               className='w-7 h-7'
             />
-            <p className='text-[#2465CF] font-normal text-[13px] '>lvl 1</p>
+            <p className='text-[#2465CF] font-normal text-[16px] '>lvl 1</p>
           </div>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
             <img
@@ -229,7 +229,7 @@ const App: React.FC = () => {
               alt=''
               className='w-7 h-7'
             />
-            <p className='text-[#2465CF] font-normal text-[13px] '>Spin</p>
+            <p className='text-[#2465CF] font-normal text-[16px] '>Spin</p>
           </div>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col border'>
             <img
@@ -237,7 +237,7 @@ const App: React.FC = () => {
               alt=''
               className='w-7 h-7'
             />
-            <p className='text-[#2465CF] font-normal text-[12px] '>Boost</p>
+            <p className='text-[#2465CF] font-normal text-[15px] '>Boost</p>
           </div>
         </div>
         {clicks.map(click => (

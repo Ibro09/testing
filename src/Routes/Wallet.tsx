@@ -1,89 +1,74 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../App.css";
+import FallingImages from "../components/Fallingimg";
+import Footer from "../components/Footer";
+import Back from "../components/Back";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
+import { dollarCoin } from "../images";
 // import { FaCopy, FaUserFriends } from "react-icons/fa";
 // import { AiOutlineUserAdd } from "react-icons/ai";
 
 const Wallet: React.FC = () => {
-  const [referrals, setReferrals] = useState(1);
+  const imageUrl = "https://via.placeholder.com/50";
+  const navigate = useNavigate();
+ const closeModal = () => {
+   navigate("/");
+ };
+ const images = [
+   { delay: "0.2s", opacity: "opacity-10", left: "left-10" },
+   { delay: "1.5s", opacity: "opacity-40", left: "left-1/4" },
+   { delay: "3.5s", opacity: "opacity-80", left: "left-1/4" },
+   { delay: "5.5s", opacity: "opacity-80", left: "left-1/4" },
+   { delay: "0.5s", opacity: "opacity-50", left: "left-1/4" },
+   { delay: "1s", opacity: "opacity-30", left: "left-1/2" },
+   { delay: "1.5s", opacity: "opacity-90", left: "left-3/4" },
+   { delay: "0s", opacity: "opacity-50", left: "left-[90%]" },
+ ];
   return (
-    <div className=' flex justify-center'>
-      <div className='w-full bg-black text-white h-screen font-bold flex flex-col max-w-xl border-2 bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center'>
-        {/* <img src="" alt="" /> sonic logo   */}
-        <h5 className='text-[40px] tb'>Invite Wallet</h5>
-        <h5 className='mb-5 text-center text-[14px]'>
-          You and your friend would recieve bonuses for invitation
-        </h5>
-        <div className='bg-[#4960b2] w-full px-6 py-4 mb-5 rounded-[10px]'>
-          {/* use glass morphism for these */}
-          <div className='item'>
-            {/* <img src="" alt="" />  PUT that user that has plus on its head as the image  */}
-            <div className='txt font-normal px-4 mb-4'>
-              <p className='text-[17px]'>Share referral link</p>
-              <p className='text-[#ddd] text-[14px] -mt-2'>
-                +750 points for you and your friend
-              </p>
-            </div>
-            <div className='txt font-normal px-4 mb-4'>
-              <p className='text-[17px]'>Invite a friend with premium</p>
-              <p className='text-[#ddd] text-[14px] -mt-2'>
-                +1000 points for you and your friend
-              </p>
-            </div>
-            <div className='flex items-center'>
-              <button className='main-button bubblegum-sans'>
-                <div className='upper'>Invite</div>
-                <div className='lower'></div>
-              </button>
-              <div className='main-button copy ml-1'>
-                <div className='upper'>
-                  {/* <FaCopy /> */}
-                </div>
-                <div className='lower'></div>
-              </div>
-            </div>
+    <div className='flex justify-center h-screen overflow-x-hidden borderred items-center'>
+      <div className='w-full bg-black text-white min-h-screen h-screen font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg relative overflow-x-hidden  max-w-[600px]'>
+        <Back />
+        <div className='flex justify-center h-[10px]  w-[100%]'>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={dollarCoin}
+              alt={`falling image ${index}`}
+              className={`absolute top-0 ${image.left} opacity-0 w-16 h-16 animate-fall`}
+              style={{ animationDelay: image.delay }}
+            />
+          ))}
+        </div>
+        <div className='fixed bottom-0 left-0 right-0 flex justify-center items-end z-50 h-[70%] bg-white rounded-t-[50px]'>
+          <div className=' w-full md:w-1/2 lg:w-1/3 rounded-t-lg p-6 animate-slide-up relative h-[100%] text-center'>
+            <h5 className='text-[27px] mb-2 text-center tx-shadow'>
+              Airdrop is coming soon
+            </h5>
+            <p className='mt-1 text-[16px] font-normal text-[#2465CF]'>
+              Keep farming
+            </p>
           </div>
         </div>
-
-        <h5 className='text-left font-normal self-start mb-2'>
-          List Of Your Wallet ({referrals})
-        </h5>
-        <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px]'>
-          {/* use glass morphism for these */}
-
-          {referrals > 0 ? (
-            <div className='item'>
-              {/* <img src="" alt="" />  PUT that user that has plus on its head as the image  */}
-              <div className='txt font-normal mb-'>
-                <div className='flex justify-between items-center mb-2'>
-                  <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} /> */}
-                    <p className='text-[17px]'>user 474372736</p>
-                  </div>
-                  <p className='text-[12px] font-normal'>+750 pts</p>
-                </div>
-                <div className='flex justify-between items-center mb-2'>
-                  <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
-                    <p className='text-[17px]'>user 474372736</p>
-                  </div>
-                  <p className='text-[12px] font-normal'>+750 pts</p>
-                </div>
-                <div className='flex justify-between items-center mb-2'>
-                  <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
-                    <p className='text-[17px]'>user 474372736</p>
-                  </div>
-                  <p className='text-[12px] font-normal'>+750 pts</p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <p className='font-normal'>You have not referred any user</p>
-          )}
-        </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
 export default Wallet;
+
+
+
+
+ // <div className='flex justify-center overflow-hidden h-screen w-screen bg'>
+    //   <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center bg w-screen'>
+    //     <FallingImages src={imageUrl} />
+    //     <div className='fixed bottom-0 flex justify-center items-end h-[75%] w-[20px]  rounded-[200px]'>
+    //       <div className='bg-white w-full md:w-1/2 lg:w-1/3 rounded-t-lg p-6 animate-slide-up relative h-full rounded-t-[100px] border'>
+    //         <h2 className='text-xl font-bold mb-4'>Airdrop is coming</h2>
+    //         <p className='text-gray-700'>This is a hardcoded modal content.</p>
+    //       </div>
+    //     </div>
+    //     <Footer />
+    //   </div>
+    // </div>

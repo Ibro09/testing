@@ -1,23 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-// import { FaCopy, FaUserFriends } from "react-icons/fa";
-// import { TiUserAdd } from "react-icons/ti";
-// import { AiOutlineUserAdd } from "react-icons/ai";
-// import { FaPlus } from "react-icons/fa";
-import {
-  binanceLogo,
-  dollarCoin,
-} from "../images";
 
 import Footer from "../components/Footer";
+import Back from "../components/Back";
 const Friends: React.FC = () => {
   const [tasks, setTasks] = useState(1);
-    const [points, setPoints] = useState(22749365);
   return (
     <div
       className='flex justify-center'
       style={{ scrollbarWidth: "none", scrollbarColor: "red" }}>
       <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
+       <Back/>
         <div className='w-full items-center '>
           <h5 className='text-[40px] mb-2 text-center tx-shadow'>Special</h5>
           {tasks > 0 ? (

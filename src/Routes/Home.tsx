@@ -190,7 +190,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=' flex items-center justify-center fixed bottom-20 pb-5 fixed w-auto left-0 right-0 '>
+        <div className=' flex items-center justify-center fixed bottom-20 pb-6 fixed w-auto left-0 right-0 '>
           <div
             className='w-[250px] flex items-center justify-center'
             onClick={handleCardClick}>

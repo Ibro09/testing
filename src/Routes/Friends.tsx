@@ -4,18 +4,20 @@ import "../App.css";
 import { TiUserAdd } from "react-icons/ti";
 // import { AiOutlineUserAdd } from "react-icons/ai";
 import Footer from "../components/Footer";
+import Back from "../components/Back";
 
 const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
   return (
     <div className=' flex justify-center'>
       <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
+        <Back />
         {/* <img src="" alt="" /> sonic logo   */}
         <h5 className='text-[40px] tb tx-shadow'>Invite friends</h5>
         <h5 className='mb-5 text-center text-[14px] text-[#2465CF]'>
           You and your friend would recieve bonuses for invitation
         </h5>
-        <div className='bg-[#4960b2] w-full px-6 py-4 mb-5 rounded-[10px]'>
+        <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px]'>
           {/* use glass morphism for these */}
           <div className='item'>
             {/* <img src="" alt="" />  PUT that user that has plus on its head as the image  */}
@@ -33,12 +35,12 @@ const Friends: React.FC = () => {
             </div>
             <div className='flex items-center'>
               <button className='main-button bubblegum-sans'>
-                <div className='upper'>Invite</div>
-                <div className='lower'></div>
+                <div className='upper btn-upper'>Invite</div>
+                <div className='lower  btn-lower'></div>
               </button>
               <div className='main-button copy ml-1'>
-                <div className='upper'>{/* <FaCopy /> */}</div>
-                <div className='lower'></div>
+                <div className='upper  btn-upper'>{/* <FaCopy /> */}</div>
+                <div className='lower  btn-lower'></div>
               </div>
             </div>
           </div>

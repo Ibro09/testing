@@ -277,3 +277,11 @@ background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);
 .border{
   border: 1px solid #2466cf53;
 }
+.borderred{
+  border: 1px solid #cf2424;
+}
+.txt-stroke{
+   letter-spacing: 1.3px;
+   color:#2465CF ;
+   -webkit-text-stroke: 1px #fff;
+}

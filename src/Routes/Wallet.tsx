@@ -39,8 +39,8 @@ const Wallet: React.FC = () => {
             />
           ))}
         </div>
-        <div className='fixed bottom-0 left-0 right-0 flex justify-center items-end z-50 h-[70%] bg-white rounded-t-[50px]'>
-          <div className=' w-full md:w-1/2 lg:w-1/3 rounded-t-lg p-6 animate-slide-up relative h-[100%] text-center'>
+        <div className='fixed bottom-0 left-0 right-0 flex justify-center items-end z-50 h-[70%] bg-white rounded-t-[50px] animate-slide-up'>
+          <div className=' w-full md:w-1/2 lg:w-1/3 rounded-t-lg p-6  relative h-[100%] text-center'>
             <h5 className='text-[27px] mb-2 text-center tx-shadow'>
               Airdrop is coming soon
             </h5>

@@ -148,7 +148,7 @@ const App: React.FC = () => {
 
   return (
     <div className='flex justify-center overflow-hidden'>
-      <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg'>
+      <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg overflow-hidden'>
         <div className='mt-3'>
           <div className='flex justify-between '>
             <div className='flex items-center bg-white border-2  max-w-[300px] w-[60%] rounded-full border'>

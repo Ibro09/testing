@@ -17,8 +17,8 @@ const Back: React.FC = ({}) => {
             alt=''
             className='w-5 h-5'
           />
-          <p className=' txt-stroke'>back</p>
-        </div>{" "}
+          <p className='text-[#2465CF]'>back</p>
+        </div>
       </Link>
     </div>
   );

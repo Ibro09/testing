@@ -190,18 +190,18 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=' flex items-center justify-center mt-10 fixed bottom-20 pb-5 fixed w-full'>
+        <div className=' flex items-center justify-center fixed bottom-20 pb-5 fixed w-auto left-0 right-0 '>
           <div
             className='w-[250px] flex items-center justify-center'
             onClick={handleCardClick}>
             <img
               src={sonic}
               alt=''
-              style={{ width: "200px" }}
+              style={{ width: "230px" }}
             />
           </div>
         </div>
-        <div className='flex items-center gap-2 fixed bottom-20 pb-2 '>
+        <div className='flex items-center gap-2 fixed bottom-20 pb-5'>
           <img
             src={dollarCoin}
             alt=''

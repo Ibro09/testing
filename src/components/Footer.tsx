@@ -20,20 +20,20 @@ const Footer: React.FC = ({}) => {
               alt='Exchange'
               className='w-8 h-8 mx-auto'
             />
-            <p className='mt-1 text-[13px] tx-shadow'>Premium</p>
+            <p className='mt-1 text-[16px] tx-shadow'>Premium</p>
           </Link>
         </div>
         <div className='text-center w-1/4   p-1'>
           <Link to='/tasks'>
             <Mine className='w-8 h-8 mx-auto text-[#aaa]' />
-            <p className='mt-1   text-[13px] tx-shadow'>Tasks</p>
+            <p className='mt-1   text-[16px] tx-shadow'>Tasks</p>
           </Link>
         </div>
 
         <div className='text-center w-1/4   p-1'>
           <Link to='/friend'>
             <Coins className='w-8 h-8 mx-auto text-[#aaa]' />
-            <p className='mt-1  text-[13px] tx-shadow'>Invite</p>
+            <p className='mt-1  text-[16px] tx-shadow'>Invite</p>
           </Link>
         </div>
         <div className='text-center w-1/4   p-1'>
@@ -43,7 +43,7 @@ const Footer: React.FC = ({}) => {
               alt='Airdrop'
               className='w-8 h-8 mx-auto'
             />
-            <p className='mt-1 text-[13px] tx-shadow'>Wallet</p>
+            <p className='mt-1 text-[16px] tx-shadow'>Wallet</p>
           </Link>
         </div>
       </div>

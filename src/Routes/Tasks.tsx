@@ -10,9 +10,11 @@ const Friends: React.FC = () => {
       className='flex justify-center'
       style={{ scrollbarWidth: "none", scrollbarColor: "red" }}>
       <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
-       <Back/>
+        <Back />
         <div className='w-full items-center '>
-          <h5 className='text-[40px] mb-2 text-center tx-shadow'>Special</h5>
+          <h5 className='text-[40px] mb-2 text-center tx-shadow mt-6'>
+            Special
+          </h5>
           {tasks > 0 ? (
             <div className='w-full'>
               <div className='bg-item w-full px-4 py-2 mb-2 rounded-[10px]'>

@@ -147,7 +147,7 @@ const App: React.FC = () => {
   }, [remPoints]);
 
   return (
-    <div className='flex justify-center overflow-hidden'>
+    <div className='flex justify-center overflow-y-hidden overflow-x-hidden'>
       <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg overflow-hidden'>
         <div className='mt-3'>
           <div className='flex justify-between '>

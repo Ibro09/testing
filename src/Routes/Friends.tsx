@@ -13,7 +13,7 @@ const Friends: React.FC = () => {
       <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
         <Back />
         {/* <img src="" alt="" /> sonic logo   */}
-        <h5 className='text-[40px] tb tx-shadow'>Invite friends</h5>
+        <h5 className='text-[40px] tb tx-shadow mt-6'>Invite friends</h5>
         <h5 className='mb-5 text-center text-[14px] text-[#2465CF]'>
           You and your friend would recieve bonuses for invitation
         </h5>

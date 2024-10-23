@@ -25,7 +25,7 @@ const Wallet: React.FC = () => {
    { delay: "0s", opacity: "opacity-50", left: "left-[90%]" },
  ];
   return (
-    <div className='flex justify-center h-screen overflow-x-hidden borderred items-center'>
+    <div className='flex justify-center h-screen overflow-x-hidden  items-center'>
       <div className='w-full bg-black text-white min-h-screen h-screen font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg relative overflow-x-hidden  max-w-[600px]'>
         <Back />
         <div className='flex justify-center h-[10px]  w-[100%]'>

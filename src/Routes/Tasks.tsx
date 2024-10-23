@@ -6,9 +6,7 @@ import "../App.css";
 // import { FaPlus } from "react-icons/fa";
 import {
   binanceLogo,
-
   dollarCoin,
-
 } from "../images";
 
 import Footer from "../components/Footer";
@@ -19,47 +17,9 @@ const Friends: React.FC = () => {
     <div
       className='flex justify-center'
       style={{ scrollbarWidth: "none", scrollbarColor: "red" }}>
-      <div className=' w-full text-white font-bold flex flex-col max-w-xl border-2 bubblegum-sans px-5 items-center min-h-[100vh] otherbg'>
-        {/* Put the heading with coin here */}
-        <div className='w-full flex flex-row justify-between items-center mt-5 px-6 mb-20'>
-          <div className='flex justify-center items-center w-[50vw]'>
-            <div
-              className='flex h-7 rounded-xl w-full text-xl -ml-5 btn-upper justify-center items-center  '
-              style={{
-                alignItems: "center",
-              }}>
-              <img
-                src={dollarCoin}
-                alt='Dollar Coin'
-                className='w-7 h-7 mx-auto zindex -ml-0 '
-              />
-              <div className='items-start justify-center w-full  '>
-                <div className='flex flex-col w-full justify-center px-2 '>
-                  <p className='font-normal text-[16px] tracking-wider'>
-                    {points}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=''>
-            <div className='flex w-[30vw] '>
-              <div className='flex items-center rounded-full  max-w-64  justify-between  w-full gap-3 btn-upper'>
-                <img
-                  src={binanceLogo}
-                  alt='Exchange'
-                  className='w-7 h-7'
-                />
-                <p className='text-[16px] tracking-widest'>4</p>
-                <div className='bg-[#aaa] rounded-full p-2'>
-                  {/* <FaPlus size={10} /> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='w-full items-center'>
-          <h5 className='font-normal text-[30px] mb-2 text-center'>Special</h5>
+      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
+        <div className='w-full items-center '>
+          <h5 className='text-[40px] mb-2 text-center tx-shadow'>Special</h5>
           {tasks > 0 ? (
             <div className='w-full'>
               <div className='bg-item w-full px-4 py-2 mb-2 rounded-[10px]'>
@@ -145,7 +105,7 @@ const Friends: React.FC = () => {
         </div>
 
         <div className='w-full items-center'>
-          <h5 className='font-normal text-[30px] mb-2 text-center'>
+          <h5 className=' text-[30px] mb-2 text-center tx-shadow'>
             Daily Tasks
           </h5>
           {tasks > 0 ? (
@@ -331,7 +291,7 @@ const Friends: React.FC = () => {
           )}
         </div>
         <div className='w-full items-center mb-[200px]'>
-          <h5 className='font-normal text-[30px] mb-2 text-center'>
+          <h5 className=' text-[30px] mb-2 text-center tx-shadow'>
             Social Tasks
           </h5>
           {tasks > 0 ? (
@@ -517,9 +477,7 @@ const Friends: React.FC = () => {
           )}
         </div>
       </div>
-      <div className='fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl flex justify-around items-center z-50 rounded-3xl text-xs flex-col bubblegum-sans'>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };

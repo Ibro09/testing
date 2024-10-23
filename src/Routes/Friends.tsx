@@ -9,10 +9,10 @@ const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
   return (
     <div className=' flex justify-center'>
-      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl border-2 bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center'>
+      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
         {/* <img src="" alt="" /> sonic logo   */}
-        <h5 className='text-[40px] tb'>Invite friends</h5>
-        <h5 className='mb-5 text-center text-[14px]'>
+        <h5 className='text-[40px] tb tx-shadow'>Invite friends</h5>
+        <h5 className='mb-5 text-center text-[14px] text-[#2465CF]'>
           You and your friend would recieve bonuses for invitation
         </h5>
         <div className='bg-[#4960b2] w-full px-6 py-4 mb-5 rounded-[10px]'>
@@ -37,16 +37,14 @@ const Friends: React.FC = () => {
                 <div className='lower'></div>
               </button>
               <div className='main-button copy ml-1'>
-                <div className='upper'>
-                  {/* <FaCopy /> */}
-                </div>
+                <div className='upper'>{/* <FaCopy /> */}</div>
                 <div className='lower'></div>
               </div>
             </div>
           </div>
         </div>
 
-        <h5 className='text-left font-normal self-start mb-2'>
+        <h5 className='text-left font-normal self-start mb-2 text-[#2465CF]'>
           List Of Your Friends ({referrals})
         </h5>
         <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px] mb-[100px]'>

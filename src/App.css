@@ -9,10 +9,13 @@
 /* 2. Bubblegum Sans */
 .bubblegum-sans {
   font-family: 'Bubblegum Sans', cursive;
-   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.534), -.5px 0 0 black, .5px 0 0 black, 0 -.5px 0 black;
-   letter-spacing: 1.3px;
+  
 }
-
+.tx-shadow{
+   /* text-shadow: 0 1px 0 #2465CF, -.5px 0 0 #2465CF, .5px 0 0 #2465CF, 0 -.5px 0 #2465CF; */
+   letter-spacing: 1.3px;
+   -webkit-text-stroke: 1px #2465CF;
+}
 /* 3. Bangers */
 .bangers {
   font-family: 'Bangers', cursive;
@@ -163,9 +166,11 @@ color: #ffffff;
 }
 .bg{
   /* background: linear-gradient(to bottom, #060000 30%, purple , rgb(1, 1, 143)); */
-  background: url("./images/sonicbg.jpg");
+  background: url("./images/sunbg.png");
   background-position: 0%;
   background-repeat:no-repeat ;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .upper{
@@ -230,7 +235,7 @@ background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);
   line-height: 22px;
 }
 
-.grass {
+.grass{
     transition: all .1s cubic-bezier(.35,1.75,.75,1);
     background-image: url(./images/grass.png);
     background-repeat: no-repeat;
@@ -257,11 +262,18 @@ background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);
 }
 
 .footer{
-  background-color:#575cef78;
+  background-color:#ffffff74;
   backdrop-filter: blur(10px);
-  
 }
 
 .otherbg{
   background: #010357;
+}
+.card{
+  background: #fff;
+  border: 1px solid #2465CF;
+
+}
+.border{
+  border: 1px solid #2466cf53;
 }

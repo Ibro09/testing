@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 // import { FaPlus } from "react-icons/fa";
-import { binanceLogo, dollarCoin, hamsterCoin } from "../images";
-import Mine from "../icons/Mine";
-import Friends from "../icons/Friends";
-import Coins from "../icons/Coins";
+import { dollarCoin,  } from "../images";
 import sonic from "../images/sonic.png";
-import moon from "../images/moon-small.png";
-import { Link } from "react-router-dom";
+
+import Footer from "../components/Footer";
 
 const App: React.FC = () => {
   const levelNames = [
@@ -39,6 +36,7 @@ const App: React.FC = () => {
   const [levelIndex, setLevelIndex] = useState(6);
   const [points, setPoints] = useState(22749365);
   const [remPoints, setRemPoints] = useState(7000);
+  const [name, setName] = useState("Web3ibrro");
 
   const [clicks, setClicks] = useState<{ id: number; x: number; y: number }[]>(
     [],
@@ -149,164 +147,97 @@ const App: React.FC = () => {
   }, [remPoints]);
 
   return (
-    <div className='bg-[#71dbff] flex justify-center overflow-hidden grass '>
-      <div className='w-full bg text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans relative  bg-cover  '>
-        <div className='grass'></div>
-        <div className='app-moon'>
-          <img src={moon} />
-        </div>
-        <div className='w-full flex flex-row justify-between items-center mt-5 px-6 z-[4]'>
-          <div className='flex justify-center items-center w-[50vw]'>
-            <div
-              className='flex h-7 rounded-xl w-full text-xl -ml-5 btn-upper justify-center items-center'
-              style={{
-                alignItems: "center",
-              }}>
+    <div className='flex justify-center overflow-x-hidden'>
+      <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg'>
+        <div className='mt-3'>
+          <div className='flex justify-between '>
+            <div className='flex items-center bg-white border-2  max-w-[300px] w-[60%] rounded-full border'>
               <img
                 src={dollarCoin}
-                alt='Dollar Coin'
-                className='w-7 h-7 mx-auto zindex -ml-0 '
+                alt=''
+                className='w-8 h-8 z-[2]'
               />
-              <div className='items-start justify-center w-full  '>
-                <div className='flex flex-col w-full justify-center px-2 '>
-                  <p className='font-normal text-[16px] tracking-wider'>
-                    {points}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=''>
-            <div className='flex w-[30vw] '>
-              <div className='flex items-center rounded-full  max-w-64  justify-between btn-upper  w-full gap-3'>
-                <img
-                  src={binanceLogo}
-                  alt='Exchange'
-                  className='w-7 h-7'
-                />
-                <p className='text-[16px] tracking-widest'>4</p>
-                <div className='bg-[#aaa] rounded-full p-2'>
-                  {/* <FaPlus size={10} /> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=' flex w-full justify-center items-center  px-4 mt-5 z-[4]'>
-          <div className='flex justify-center items-center p-1 btn-upper rounded-full gap-3 px-4'>
-            <div className='flex items-center justify-center'>
-              <img
-                src={dollarCoin}
-                alt='Dollar Coin'
-                className='w-5 h-5 mx-auto zindex -ml-0 '
-              />
-              <p className='px-2 text-[16px] font-normal'>Boosters</p>
-            </div>
-            <div className='flex  items-center'>
-              <img
-                src={dollarCoin}
-                alt='Dollar Coin'
-                className='w-5 h-5 mx-auto zindex  '
-              />
-              <p className='px-2 text-[16px] font-normal'>Boosters</p>
-            </div>
-            <div className='flex  items-center'>
-              <img
-                src={dollarCoin}
-                alt='Dollar Coin'
-                className='w-5 h-5 mx-auto zindex '
-              />
-              <p className='px-2 text-[16px] font-normal'>Boosters</p>
-            </div>
-          </div>
-        </div>
-        <div className='flex-grow mt-4'>
-          <div className='rounded-t-[46px] w-full'>
-            <div className='px-4  flex justify-center'>
-              <div className='px-4 py-2 flex items-center space-x-2'>
-                <img
-                  src={dollarCoin}
-                  alt='Dollar Coin'
-                  className='w-10 h-10'
-                />
-                <p className='text-[30px] font-bold'>
-                  {points.toLocaleString()}
+              <div className='py-1   align-start w-full px-7 -ml-5'>
+                <p className='font-normal text-[16px] text-[#2465CF] '>
+                  {name}
                 </p>
               </div>
             </div>
-
-            <div className='px-4 mt-4 flex justify-center'>
-              <div
-                className='w-[250px] h-[250px] p-4 rounded-full '
-                onClick={handleCardClick}>
-                <div className='w-full h-full rounded-full '>
-                  <img
-                    src={sonic}
-                    alt='Main Character'
-                    style={{ width: "200px" }}
-                  />
-                </div>
-              </div>
+            <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border'>
+              <img
+                src={dollarCoin}
+                alt=''
+                className='w-8 h-8 z-[2] -ml-3'
+              />
+              <p className='font-normal text-[16px] text-[#2465CF] '>4</p>
+              <img
+                src={dollarCoin}
+                alt=''
+                className='w-8 h-8 z-[2] -mr-3'
+              />
+            </div>
+          </div>
+          <div className='mt-3 w-full'>
+            <div className=' w-full flex items-center justify-center'>
+              <img
+                src={dollarCoin}
+                alt='Dollar Coin'
+                className='w-10 h-10'
+              />
+              <p className='text-[30px] font-bold tx-shadow'>
+                {points.toLocaleString()}
+              </p>
             </div>
           </div>
         </div>
-        <div className='fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl flex justify-around items-center z-50 rounded-3xl text-xs flex-col bubblegum-sans'>
-          <div className='px-4 z-10 w-[100%] mb-4'>
-            <div className='flex items-center justify-between space-x-4 mt-1'>
-              <div className='flex items-center w-[70%]'>
-                <div className='w-auto  py-4 px-6 rounded-full zindex btn-upper text-white'>
-                  <div className='flex items-center flex-col'>
-                    <div className='text-[20px] font-bold'>{points} </div>
-                    <div className='text-l font-bold'>
-                      /{levelMinPoints[levelIndex]}
-                    </div>
-                  </div>
-                </div>
-                <div className='flex items-center mt-1 border-2 border-[white] rounded-full w-[100%] -ml-2.5 '>
-                  <div className='w-[70%] h-5 bg-[blue]/[0.6] rounded-full z-0 btn'>
-                    <div
-                      className='h-2 rounded-full'
-                      style={{ width: `${calculateProgress()}%` }}></div>
-                  </div>
-                </div>
-              </div>
-              <div className='flex items-center w-auto border-[white]  rounded-xl px-6 py-2 max-w-64 flex-col btn-upper text-white'>
-                <div className='text-xl font-bold'>{remPoints}</div>
-                <div className='text-l font-bold'>/7000</div>
-              </div>
-            </div>
+        <div className=' flex items-center justify-center mt-10'>
+          <div
+            className='w-[250px] flex items-center justify-center'
+            onClick={handleCardClick}>
+            <img
+              src={sonic}
+              alt=''
+              style={{ width: "150px" }}
+            />
           </div>
-          <div className='flex justify-around items-center z-50 rounded-3xl text-xs w-[100%] footer'>
-            
-              <div className='text-center text-white w-1/4 bg-[#1c1f24] m-1 p-2 rounded-2xl'><Link to ='/'>
-                <img
-                  src={binanceLogo}
-                  alt='Exchange'
-                  className='w-8 h-8 mx-auto'
-                />
-                <p className='mt-1'>Premium</p>
-            </Link>
-              </div>
-            <div className='text-center text-white w-1/4'>
-            <Link to ='/tasks'>
-              <Mine className='w-8 h-8 mx-auto' />
-              <p className='mt-1'>Shop</p></Link>
-            </div>
-        
-            <div className='text-center text-white w-1/4'>
-            <Link to ='/friend'>
-              <Coins className='w-8 h-8 mx-auto' />
-              <p className='mt-1'>Invite</p></Link>
-            </div>
-            <div className='text-center text-white w-1/4'>
-            <Link to ='/wallet'>
-              <img
-                src={hamsterCoin}
-                alt='Airdrop'
-                className='w-8 h-8 mx-auto'
-              />
-              <p className='mt-1'>Wallet</p>
-            </Link></div>
+        </div>
+        <div className='flex items-center gap-2 fixed bottom-20 pb-2'>
+          <img
+            src={dollarCoin}
+            alt=''
+            className='w-7 h-7'
+          />
+          <div className='flex'>
+            <p className='text-[#2465CF] font-normal'>{remPoints}</p>
+            <p className='text-[#2465CF] font-normal'>/7000</p>
+          </div>
+        </div>
+        <Footer />
+
+        <div className='cards  fixed top-[calc(45%-4rem)]'>
+          <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
+            <img
+              src={dollarCoin}
+              alt=''
+              className='w-7 h-7'
+            />
+            <p className='text-[#2465CF] font-normal text-[13px] '>lvl 1</p>
+          </div>
+          <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
+            <img
+              src={dollarCoin}
+              alt=''
+              className='w-7 h-7'
+            />
+            <p className='text-[#2465CF] font-normal text-[13px] '>Spin</p>
+          </div>
+          <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col border'>
+            <img
+              src={dollarCoin}
+              alt=''
+              className='w-7 h-7'
+            />
+            <p className='text-[#2465CF] font-normal text-[12px] '>Boost</p>
           </div>
         </div>
         {clicks.map(click => (
@@ -321,10 +252,132 @@ const App: React.FC = () => {
             onAnimationEnd={() => handleAnimationEnd(click.id)}>
             {pointsToAdd}
           </div>
-        ))}{" "}
+        ))}
       </div>
     </div>
   );
 };
 
 export default App;
+
+//  <div className='w-full flex flex-row justify-between items-center mt-5 px-6 z-[4]'>
+//           <div className='flex justify-center items-center w-[70vw]'>
+//             <div
+//               className='flex h-7 rounded-xl w-full text-xl -ml-5 btn-upper justify-center items-center'
+//               style={{
+//                 alignItems: "center",
+//               }}>
+//               <img
+//                 src={dollarCoin}
+//                 alt='Dollar Coin'
+//                 className='w-7 h-7 mx-auto zindex -ml-0 '
+//               />
+//               <div className='items-start justify-center w-[70%]  '>
+//                 <div className='flex flex-col w-full justify-center px-2 '>
+//                   <p className='font-normal text-[16px] tracking-wider'>
+//                     {points.toLocaleString()}
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           <div className=''>
+//             <div className='flex w-[30vw] '>
+//               <div className='flex items-center rounded-full  max-w-64  justify-between btn-upper  w-full gap-3'>
+//                 <img
+//                   src={binanceLogo}
+//                   alt='Exchange'
+//                   className='w-7 h-7'
+//                 />
+//                 <p className='text-[16px] tracking-widest'>4</p>
+//                 <div className='bg-[#aaa] rounded-full p-2'>
+//                   {/* <FaPlus size={10} /> */}
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className=' flex items-center space-x-2 border-2 '>
+//           <img
+//             src={dollarCoin}
+//             alt='Dollar Coin'
+//             className='w-10 h-10'
+//           />
+//           <p className='text-[30px] font-bold'>{points.toLocaleString()}</p>
+//         </div>
+//         <div className='flex-grow mt-4'>
+//           <div className='rounded-t-[46px] w-full'>
+//             <div className='px-4  flex justify-center'></div>
+
+//             <div className='px-4 mt-4 flex justify-center'>
+//               <div
+//                 className='w-[250px] h-[250px] p-4 rounded-full '
+//                 onClick={handleCardClick}>
+//                 <div className='w-full h-full rounded-full '>
+//                   <img
+//                     src={sonic}
+//                     alt='Main Character'
+//                     style={{ width: "200px" }}
+//                   />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className='fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl flex justify-around items-center z-50 rounded-3xl text-xs flex-col bubblegum-sans'>
+//           <div className='px-4 z-10 w-[100%] mb-4'>
+//             <div className='flex items-center justify-between space-x-4 mt-1'>
+//               <div className='flex items-center w-[70%]'>
+//                 <div className='w-auto  py-4 px-6 rounded-full zindex btn-upper text-white'>
+//                   <div className='flex items-center flex-col'>
+//                     <div className='text-[20px] font-bold'>{points} </div>
+//                     <div className='text-l font-bold'>
+//                       /{levelMinPoints[levelIndex]}
+//                     </div>
+//                   </div>
+//                 </div>
+//                 <div className='flex items-center mt-1 border-2 border-[white] rounded-full w-[100%] -ml-2.5 '>
+//                   <div className='w-[70%] h-5 bg-[blue]/[0.6] rounded-full z-0 btn'>
+//                     <div
+//                       className='h-2 rounded-full'
+//                       style={{ width: `${calculateProgress()}%` }}></div>
+//                   </div>
+//                 </div>
+//               </div>
+//               <div className='flex items-center w-auto border-[white]  rounded-xl px-6 py-2 max-w-64 flex-col btn-upper text-white'>
+//                 <div className='text-xl font-bold'>{remPoints}</div>
+//                 <div className='text-l font-bold'>/7000</div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//  <div className=' flex w-full justify-center items-center  px-4 mt-5 z-[4]'>
+
+//    <div className='flex justify-center items-center p-1 btn-upper rounded-full gap-3 px-4'>
+//      <div className='flex items-center justify-center'>
+//        <img
+//          src={dollarCoin}
+//          alt='Dollar Coin'
+//          className='w-5 h-5 mx-auto zindex -ml-0 '
+//        />
+//        <p className='px-2 text-[16px] font-normal'>Boosters</p>
+//      </div>
+//      <div className='flex  items-center'>
+//        <img
+//          src={dollarCoin}
+//          alt='Dollar Coin'
+//          className='w-5 h-5 mx-auto zindex  '
+//        />
+//        <p className='px-2 text-[16px] font-normal'>Boosters</p>
+//      </div>
+//      <div className='flex  items-center'>
+//        <img
+//          src={dollarCoin}
+//          alt='Dollar Coin'
+//          className='w-5 h-5 mx-auto zindex '
+//        />
+//        <p className='px-2 text-[16px] font-normal'>Boosters</p>
+//      </div>
+//    </div>
+//  </div>;

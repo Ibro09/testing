@@ -5,6 +5,7 @@ import { dollarCoin,  } from "../images";
 import sonic from "../images/sonic.png";
 
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const App: React.FC = () => {
   const levelNames = [
@@ -224,12 +225,13 @@ const App: React.FC = () => {
             <p className='text-[#2465CF] font-normal text-[16px] '>lvl 1</p>
           </div>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
+            <Link to='/spin'>
             <img
               src={dollarCoin}
               alt=''
               className='w-7 h-7'
             />
-            <p className='text-[#2465CF] font-normal text-[16px] '>Spin</p>
+            <p className='text-[#2465CF] font-normal text-[16px] '>Spin</p></Link>
           </div>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col border'>
             <img

@@ -285,3 +285,7 @@ background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);
    color:#2465CF ;
    -webkit-text-stroke: 1px #fff;
 }
+.wheel-container{
+  border: 2px solid red;
+  max-width: 70%;
+}

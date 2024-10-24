@@ -3,6 +3,8 @@ import "../App.css";
 
 import Footer from "../components/Footer";
 import Back from "../components/Back";
+
+import bg from '../images/sunbg.png'
 const Friends: React.FC = () => {
   const [tasks, setTasks] = useState(1);
   return (
@@ -11,7 +13,14 @@ const Friends: React.FC = () => {
       style={{ scrollbarWidth: "none", scrollbarColor: "red" }}>
       <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
         <Back />
-        <div className='w-full items-center '>
+        <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
+          <img
+            src={bg}
+            alt=''
+            className="w-full h-full"
+          />
+        </div>
+        <div className='w-full items-center zindex'>
           <h5 className='text-[40px] mb-2 text-center tx-shadow mt-6'>
             Special
           </h5>
@@ -99,7 +108,7 @@ const Friends: React.FC = () => {
           )}
         </div>
 
-        <div className='w-full items-center'>
+        <div className='w-full items-center zindex'>
           <h5 className=' text-[30px] mb-2 text-center tx-shadow'>
             Daily Tasks
           </h5>
@@ -285,7 +294,7 @@ const Friends: React.FC = () => {
             <p className='font-normal'>no tasks Available,come back later</p>
           )}
         </div>
-        <div className='w-full items-center mb-[200px]'>
+        <div className='w-full items-center mb-[200px] zindex'>
           <h5 className=' text-[30px] mb-2 text-center tx-shadow'>
             Social Tasks
           </h5>

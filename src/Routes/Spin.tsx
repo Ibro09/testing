@@ -72,8 +72,8 @@ const Spin: React.FC = () => {
     }, 7000);
   }, [showtxt]);
   return (
-    <div className='bg-black flex justify-center items-center'>
-      <div className='w-full bg-black text-white h-screen font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans overflow-hidden'>
+    <div className='bg-black flex justify-center items-center slide-up'>
+      <div className='w-full bg-black text-white h-screen font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans overflow-hidden bg'>
         <div className='wheel-container flex justify-center items-center flex-col'>
           <div className='flex w-full px-4 justify-center items-center pt-4 pb-7'>
             <div className='flex w-full '>
@@ -82,17 +82,15 @@ const Spin: React.FC = () => {
                 <div className='lower'></div>
               </button>
               <button className='main-button bubblegum-sans copy'>
-                <div className='upper gap-3'>
-                  {/* <FaPlus></FaPlus> */}
-                </div>
+                <div className='upper gap-3'>{/* <FaPlus></FaPlus> */}</div>
                 <div className='lower'></div>
               </button>
             </div>
-            <div>
-              {/* <FaTimes size={20} /> */}
-            </div>
+            <div>{/* <FaTimes size={20} /> */}</div>
           </div>
-          <p>{showtxt ? `${data[prizeNumber].txt}` : ""}</p>
+          <p className='text-[40px] mb-2 text-center tx-shadow mt-6'>
+            {showtxt ? `${data[prizeNumber].txt}` : ""}
+          </p>
           <Wheel
             mustStartSpinning={mustSpin}
             prizeNumber={prizeNumber}

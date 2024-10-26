@@ -1,11 +1,13 @@
 import { dollarCoin } from "../images";
+import back from "../icons/back.png";
+
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
 const Back: React.FC = ({}) => {
   return (
-    <div className='w-full z-10 fixed top-2 left-4'>
+    <div className='w-full z-10 fixed top-2 left-4 z-20'>
       <Link
         to='/'
         className='w-auto flex gap-2 float-left '>
@@ -13,7 +15,7 @@ const Back: React.FC = ({}) => {
           className=' w-full flex gap-2 items-center'
           onClick={() => Link}>
           <img
-            src={dollarCoin}
+            src={back}
             alt=''
             className='w-5 h-5'
           />

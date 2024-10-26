@@ -7,6 +7,7 @@ import Tasks from "./Routes/Tasks";
 import Spin from "./Routes/Spin";
 import Wallet from "./Routes/Wallet";
 import ModalPage from "./components/Modal";
+import Level from "./Routes/Level";
 
 
 
@@ -38,6 +39,10 @@ const App: React.FC = () => {
         <Route
           path='/modal'
           element={<ModalPage />}
+        />
+        <Route
+          path='/level'
+          element={<Level />}
         />
       </Routes>
     </Router>

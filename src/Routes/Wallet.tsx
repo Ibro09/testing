@@ -5,8 +5,7 @@ import Footer from "../components/Footer";
 import Back from "../components/Back";
 import { Link, useNavigate, useNavigation } from "react-router-dom";
 import { dollarCoin } from "../images";
-// import { FaCopy, FaUserFriends } from "react-icons/fa";
-// import { AiOutlineUserAdd } from "react-icons/ai";
+import parachute from '../icons/giftparachute.png'
 
 const Wallet: React.FC = () => {
   const imageUrl = "https://via.placeholder.com/50";
@@ -32,9 +31,9 @@ const Wallet: React.FC = () => {
           {images.map((image, index) => (
             <img
               key={index}
-              src={dollarCoin}
+              src={parachute}
               alt={`falling image ${index}`}
-              className={`absolute top-0 ${image.left} opacity-0 w-16 h-16 animate-fall`}
+              className={`absolute top-0 ${image.left} opacity-0 w-16 animate-fall`}
               style={{ animationDelay: image.delay }}
             />
           ))}

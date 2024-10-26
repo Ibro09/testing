@@ -286,6 +286,45 @@ background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);
    -webkit-text-stroke: 1px #fff;
 }
 .wheel-container{
-  border: 2px solid red;
-  max-width: 70%;
+  border: 2px solid #ff0606;
+  /* max-width: 70%; */
+  /* width: 90%; */
+  width: auto;
+}
+ @keyframes circularMotion {
+    0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+    #chart{
+       
+       
+       
+    }
+    #question{
+       
+    }
+    #question h1{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

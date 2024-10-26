@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 // import { FaPlus } from "react-icons/fa";
-import { dollarCoin,  } from "../images";
+import { dollarCoin } from "../images";
 import sonic from "../images/sonic.png";
+import user from "../icons/user.png";
+import ring from "../icons/rings.png";
+import plus from "../icons/plus.png";
+import coin from "../icons/coin.png";
+import lvl from "../icons/level.png";
+import spin from "../icons/spin.png";
+import boost from "../icons/boost.png";
+import bolt from "../icons/bolt.png";
+
 
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -152,11 +161,11 @@ const App: React.FC = () => {
       <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg overflow-hidden'>
         <div className='mt-3'>
           <div className='flex justify-between '>
-            <div className='flex items-center bg-white border-2  max-w-[300px] w-[60%] rounded-full border'>
+            <div className='flex items-center bg-white border-2  max-w-[300px] w-[60%] rounded-full border h-8'>
               <img
-                src={dollarCoin}
+                src={user}
                 alt=''
-                className='w-8 h-8 z-[2]'
+                className='w-10 h-10 z-[2]'
               />
               <div className='py-1   align-start w-full px-7 -ml-5'>
                 <p className='font-normal text-[16px] text-[#2465CF] '>
@@ -164,24 +173,24 @@ const App: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border'>
+            <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8'>
               <img
-                src={dollarCoin}
+                src={ring}
                 alt=''
-                className='w-8 h-8 z-[2] -ml-3'
+                className='w-12 h-12 z-[2] -ml-3'
               />
               <p className='font-normal text-[16px] text-[#2465CF] '>4</p>
               <img
-                src={dollarCoin}
+                src={plus}
                 alt=''
-                className='w-8 h-8 z-[2] -mr-3'
+                className='w-7 h-7 z-[2] -mr-1'
               />
             </div>
           </div>
           <div className='mt-3 w-full'>
             <div className=' w-full flex items-center justify-center'>
               <img
-                src={dollarCoin}
+                src={coin}
                 alt='Dollar Coin'
                 className='w-10 h-10'
               />
@@ -202,9 +211,9 @@ const App: React.FC = () => {
             />
           </div>
         </div>
-        <div className='flex items-center gap-2 fixed bottom-20 pb-5'>
+        <div className='flex items-center fixed bottom-20 pb-5'>
           <img
-            src={dollarCoin}
+            src={bolt}
             alt=''
             className='w-7 h-7'
           />
@@ -217,29 +226,35 @@ const App: React.FC = () => {
 
         <div className='cards  fixed top-[calc(45%-4rem)]'>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
-            <img
-              src={dollarCoin}
-              alt=''
-              className='w-7 h-7'
-            />
-            <p className='text-[#2465CF] font-normal text-[16px] '>lvl 1</p>
+            <Link to='/level'>
+              <img
+                src={lvl}
+                alt=''
+                className='w-8 h-8'
+              />
+              <p className='text-[#2465CF] font-normal text-[16px] '>lvl 1</p>
+            </Link>
           </div>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
             <Link to='/spin'>
-            <img
-              src={dollarCoin}
-              alt=''
-              className='w-7 h-7'
-            />
-            <p className='text-[#2465CF] font-normal text-[16px] '>Spin</p></Link>
+              <img
+                src={spin}
+                alt=''
+                className='w-8 h-8'
+              />
+              <p className='text-[#2465CF] font-normal text-[16px] '>Spin</p>
+            </Link>
           </div>
+
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col border'>
-            <img
-              src={dollarCoin}
-              alt=''
-              className='w-7 h-7'
-            />
-            <p className='text-[#2465CF] font-normal text-[15px] '>Boost</p>
+            <Link to='/spin'>
+              <img
+                src={boost}
+                alt=''
+                className='w-8 h-8 '
+              />
+              <p className='text-[#2465CF] text-[15px] '>Boost</p>
+            </Link>
           </div>
         </div>
         {clicks.map(click => (

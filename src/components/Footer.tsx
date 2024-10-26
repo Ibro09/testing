@@ -5,7 +5,10 @@ import {
   hamsterCoin,
 } from "../images";
 import Mine from "../icons/Mine";
-import Friends from "../icons/Friends";
+import premium from "../icons/premium.png";
+import wallet from "../icons/image.png";
+import tasks from "../icons/earn.png";
+import friends from "../icons/friends.png";
 import Coins from "../icons/Coins";
 import { Link } from "react-router-dom";
 
@@ -16,7 +19,7 @@ const Footer: React.FC = ({}) => {
         <div className='text-center w-1/4 m-1 p-1 text-[#2465CF]'>
           <Link to='/'>
             <img
-              src={binanceLogo}
+              src={premium}
               alt='Exchange'
               className='w-8 h-8 mx-auto'
             />
@@ -27,14 +30,17 @@ const Footer: React.FC = ({}) => {
         </div>
         <div className='text-center w-1/4 text-[#2465CF]  p-1'>
           <Link to='/tasks'>
-            <Mine className='w-8 h-8 mx-auto text-[#aaa]' />
+            <img
+              className='w-8 h-8 mx-auto text-[#aaa]'
+              src={tasks}
+            />
             <p className='mt-1 text-[16px] font-normal text-[#2465CF]'>Tasks</p>
           </Link>
         </div>
 
         <div className='text-center w-1/4 text-[#2465CF]  p-1'>
           <Link to='/friend'>
-            <Coins className='w-8 h-8 mx-auto text-[#aaa]' />
+            <img className='w-8 h-8 mx-auto text-[#aaa]' src={friends}/>
             <p className='mt-1 text-[16px] font-normal text-[#2465CF]'>
               Invite
             </p>
@@ -43,7 +49,7 @@ const Footer: React.FC = ({}) => {
         <div className='text-center w-1/4  p-1'>
           <Link to='/wallet'>
             <img
-              src={hamsterCoin}
+              src={wallet}
               alt='Airdrop'
               className='w-8 h-8 mx-auto'
             />

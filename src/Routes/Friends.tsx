@@ -5,6 +5,8 @@ import { TiUserAdd } from "react-icons/ti";
 // import { AiOutlineUserAdd } from "react-icons/ai";
 import Footer from "../components/Footer";
 import Back from "../components/Back";
+import copy from "../icons/copy.png";
+
 
 const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
@@ -39,7 +41,7 @@ const Friends: React.FC = () => {
                 <div className='lower  btn-lower'></div>
               </button>
               <div className='main-button copy ml-1'>
-                <div className='upper  btn-upper'>{/* <FaCopy /> */}</div>
+                <div className='upper  btn-upper'><img src={copy} alt="" className="w-6" /></div>
                 <div className='lower  btn-lower'></div>
               </div>
             </div>

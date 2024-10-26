@@ -247,12 +247,11 @@ const SpinningWheel: React.FC = () => {
 
   return (
     <div className='w-full h-screen flex flex-col items-center bg overflow-hidden'>
-      <div
-        ref={chartRef}
+      <div ref={chartRef}
         className='flex justify-center w-full h-[500px] mt-10 items-center chartref flex-col-reverse'>
         <div
           ref={questionRef}
-          className='mt-4 text-center zindex top-10 fixed tx-shadow text-white text-[20px]'>
+          className='mt-4 text-center zindex fixed tx-shadow text-white text-[20px] right-[50%] top-10'>
           <h1></h1>
         </div>
         <button

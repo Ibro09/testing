@@ -251,7 +251,14 @@ const SpinningWheel: React.FC = () => {
     <div className='w-full h-screen flex flex-col items-center bg'>
       <div
         ref={chartRef}
-        className='flex justify-center w-full h-[700px] mt-10 items-center borderred chartref'></div>
+        className='flex justify-center w-full h-[700px] mt-10 items-center borderred chartref flex-col-reverse'>
+        <button
+          className='main-button bubblegum-sans w-[100px] -mt-[170px]'
+          onClick={() => spinRef.current()}>
+          <div className='upper btn-upper'>Spin</div>
+          <div className='lower btn-lower'></div>
+        </button>
+      </div>
       <Back />
       <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8 top-2 fixed right-4'>
         <img
@@ -266,17 +273,7 @@ const SpinningWheel: React.FC = () => {
           className='w-7 h-7 z-[2] -mr-1'
         />
       </div>
-      <button
-        className='main-button bubblegum-sans w-[100px]'
-        onClick={() => spinRef.current()}>
-        <div className='upper btn-upper'>Spin</div>
-        <div className='lower btn-lower'></div>
-      </button>
-      <div
-        ref={questionRef}
-        className='mt-4 text-center'>
-        <h1></h1>
-      </div>
+
     </div>
   );
 };

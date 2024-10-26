@@ -328,3 +328,8 @@ background: linear-gradient(45deg, #575def 55%, #575cefe0 30%);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.chartRef {
+  width: 100%;
+  height: 70vh; /* Adjust as necessary */
+  overflow: hidden; /* Prevent overflow */
+}

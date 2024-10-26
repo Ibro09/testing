@@ -113,10 +113,8 @@ const SpinningWheel: React.FC = () => {
     const svg = d3
       .select(chartRef.current)
       .append("svg")
-      .attr("width", w)
-      .attr("height", "auto")
-      .style("display", "flex");
-    // .attr("class", "pt-0 pr-10");
+      .attr("width", "100%") // Set to 100% for responsiveness
+      .attr("height", "100%"); // Set to 100% for responsiveness
 
     const container = svg
       .append("g")
@@ -132,7 +130,7 @@ const SpinningWheel: React.FC = () => {
       .attr("r", r + 10)
       .style("fill", "none")
       .style("stroke", "#2465CF")
-      .style("stroke-width", "5px")
+      .style("stroke-width", "5px");
 
     const pie = d3
       .pie<DataItem>()
@@ -220,9 +218,9 @@ const SpinningWheel: React.FC = () => {
           if (questionRef.current) {
             questionRef.current.querySelector("h1")!.textContent =
               data[picked].question;
-              setTimeout(() => {
-                 questionRef.current.querySelector("h1")!.textContent =''
-              }, 4000);
+            setTimeout(() => {
+              questionRef.current.querySelector("h1")!.textContent = "";
+            }, 4000);
           }
           oldrotation = rotation;
           container.on("click", spin);
@@ -235,7 +233,7 @@ const SpinningWheel: React.FC = () => {
           }, 2000);
         });
     }
-spinRef.current = spin;
+    spinRef.current = spin;
     function rotTween() {
       const i = d3.interpolate(oldrotation % 360, rotation);
       return (t: number) => `rotate(${i(t)})`;
@@ -243,7 +241,7 @@ spinRef.current = spin;
 
     svg
       .append("g")
-      .attr("transform", `translate(${w / 0.8},${h / 1 - r})`)
+      .attr("transform", `translate(${w / 0.8},${h / 2 - r})`)
       .append("path")
       .attr("d", `M-${r * 0.15},0L0,${r * 0.05}L0,-${r * 0.05}Z`)
       .style("fill", "black");
@@ -253,7 +251,7 @@ spinRef.current = spin;
     <div className='w-full h-screen flex flex-col items-center bg'>
       <div
         ref={chartRef}
-        className='flex justify-center w-full h-[700px] mt-10 items-center borderred'></div>
+        className='flex justify-center w-full h-[700px] mt-10 items-center borderred chartref'></div>
       <Back />
       <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8 top-2 fixed right-4'>
         <img

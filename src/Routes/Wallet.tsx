@@ -29,13 +29,16 @@ const Wallet: React.FC = () => {
         <Back />
         <div className='flex justify-center h-[10px]  w-[100%]'>
           {images.map((image, index) => (
-            <img
-              key={index}
-              src={parachute}
-              alt={`falling image ${index}`}
+            <div
               className={`absolute top-0 ${image.left} opacity-0 w-16 animate-fall`}
-              style={{ animationDelay: image.delay }}
-            />
+              style={{ animationDelay: image.delay }}>
+              <img
+                key={index}
+                src={parachute}
+                alt={`falling image ${index}`}
+              />
+              <p>{index}</p>
+            </div>
           ))}
         </div>
         <div className='fixed bottom-0 left-0 right-0 flex justify-center items-end z-50 h-[70%] bg-white rounded-t-[50px] animate-slide-up'>

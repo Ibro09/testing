@@ -101,7 +101,7 @@ const SpinningWheel: React.FC = () => {
   useEffect(() => {
     const w = window.innerWidth * 1; // 80% of container width
     const h = window.innerHeight * 0.8; // 80% of container height
-    const r = (Math.min(w, h) / 2) * 0.7; // Adjust 0.7 to control the size
+    const r = (Math.min(w, h) / 2) * 0.8; // Adjust 0.7 to control the size
 
     let rotation = 0;
     let oldrotation = 0;
@@ -121,7 +121,7 @@ const SpinningWheel: React.FC = () => {
     const container = svg
       .append("g")
       .attr("class", "chartholder")
-      .attr("transform", `translate(${w / 2},${h / 2.5})`);
+      .attr("transform", `translate(${w / 2},${h / 2})`);
 
     const vis = container.append("g");
 
@@ -253,7 +253,7 @@ spinRef.current = spin;
     <div className='w-full h-screen flex flex-col items-center bg'>
       <div
         ref={chartRef}
-        className='flex justify-center w-full min-h-[100vw] mt-10 items-center borderred'></div>
+        className='flex justify-center w-full h-[500px] mt-10 items-center borderred'></div>
       <Back />
       <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8 top-2 fixed right-4'>
         <img

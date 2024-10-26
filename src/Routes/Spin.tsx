@@ -23,76 +23,74 @@ const SpinningWheel: React.FC = () => {
     {
       label: "Dell LAPTOP",
       value: 1,
-      question:
-        "What CSS property is used for specifying the area between the content and its border?",
+      question: "What CSS property",
       image: coin,
       color: "#ff0000",
     },
     {
       label: "IMAC PRO",
       value: 2,
-      question: "What CSS property is used for changing the font?",
+      question: "What CSS property",
       image: coin,
       color: "#00ff00",
     },
     {
       label: "SUZUKI",
       value: 3,
-      question: "What CSS property is used for changing the color of text?",
+      question: "What CSS property",
       image: coin,
       color: "#0000ff",
     },
     {
       label: "HONDA",
       value: 4,
-      question: "What CSS property is used for changing the boldness of text?",
+      question: "What CSS property",
       image: coin,
       color: "#ffff00",
     },
     {
       label: "FERRARI",
       value: 5,
-      question: "What CSS property is used for changing the size of text?",
+      question: "What CSS property",
       image: coin,
       color: "#ff00ff",
     },
     {
       label: "APARTMENT",
       value: 6,
-      question:
-        "What CSS property is used for changing the background color of a box?",
+      question: "What CSS property",
       image: coin,
       color: "#00ffff",
     },
     {
       label: "IPAD PRO",
       value: 7,
-      question:
-        "Which word is used for specifying an HTML tag that is inside another tag?",
+      question: "What CSS property",
+
       image: coin,
       color: "#ff8000",
     },
     {
       label: "LAND",
       value: 8,
-      question:
-        "Which side of the box is the third number in: margin:1px 1px 1px 1px?",
+      question: "What CSS property",
+
       image: coin,
       color: "#8000ff",
     },
     {
       label: "MOTOROLLA",
       value: 9,
-      question:
-        "What are the fonts that don't have serifs at the ends of letters called?",
+      question: "What CSS property",
+
       image: coin,
       color: "#008000",
     },
     {
       label: "BMW",
       value: 10,
-      question:
-        "With CSS selectors, what character prefix should one use to specify a class?",
+          question: "What CSS property",
+
       image: coin,
       color: "#800000",
     },
@@ -213,11 +211,11 @@ const SpinningWheel: React.FC = () => {
         .on("end", function () {
           d3.select(`.slice:nth-child(${picked + 1}) path`).style(
             "stroke",
-            "yellow",
+            "#2465CF",
           );
           if (questionRef.current) {
             questionRef.current.querySelector("h1")!.textContent =
-              data[picked].question;
+            `${data[picked].question + picked}`;
             setTimeout(() => {
               questionRef.current.querySelector("h1")!.textContent = "";
             }, 4000);
@@ -230,7 +228,7 @@ const SpinningWheel: React.FC = () => {
               "stroke",
               "",
             );
-          }, 2000);
+          }, 4000);
         });
     }
     spinRef.current = spin;
@@ -248,10 +246,15 @@ const SpinningWheel: React.FC = () => {
   }, []);
 
   return (
-    <div className='w-full h-screen flex flex-col items-center bg'>
+    <div className='w-full h-screen flex flex-col items-center bg overflow-hidden'>
       <div
         ref={chartRef}
-        className='flex justify-center w-full h-[700px] mt-10 items-center borderred chartref flex-col-reverse'>
+        className='flex justify-center w-full h-[500px] mt-10 items-center chartref flex-col-reverse'>
+        <div
+          ref={questionRef}
+          className='mt-4 text-center zindex top-10 fixed tx-shadow text-white text-[20px]'>
+          <h1></h1>
+        </div>
         <button
           className='main-button bubblegum-sans w-[100px] -mt-[170px]'
           onClick={() => spinRef.current()}>
@@ -260,6 +263,11 @@ const SpinningWheel: React.FC = () => {
         </button>
       </div>
       <Back />
+      <div
+        ref={questionRef}
+        className=' text-center tx-shadow text-white font-[20px]'>
+        <h1 className='font-[20px]'></h1>
+      </div>
       <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8 top-2 fixed right-4'>
         <img
           src={ring}
@@ -273,7 +281,6 @@ const SpinningWheel: React.FC = () => {
           className='w-7 h-7 z-[2] -mr-1'
         />
       </div>
-
     </div>
   );
 };

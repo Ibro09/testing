@@ -14,7 +14,7 @@ const Wallet: React.FC = () => {
    navigate("/");
  };
  const images = [
-   { delay: "3.2s", opacity: "opacity-10", left: "left-1/2" },
+   { delay: "3.2s", opacity: "opacity-10", left: "left-1" },
    { delay: "1.5s", opacity: "opacity-40", left: "left-1/4" },
    { delay: "3.5s", opacity: "opacity-80", left: "left-1/4" },
    { delay: "5.5s", opacity: "opacity-80", left: "left-1/4" },
@@ -37,7 +37,7 @@ const Wallet: React.FC = () => {
                 src={parachute}
                 alt={`falling image ${index}`}
               />
-              <p>{index}</p>
+             
             </div>
           ))}
         </div>

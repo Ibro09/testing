@@ -121,7 +121,7 @@ const SpinningWheel: React.FC = () => {
     const container = svg
       .append("g")
       .attr("class", "chartholder")
-      .attr("transform", `translate(${w / 2},${h / 3})`);
+      .attr("transform", `translate(${w / 2},${h / 7})`);
 
     const vis = container.append("g");
 

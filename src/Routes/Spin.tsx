@@ -253,7 +253,7 @@ spinRef.current = spin;
     <div className='w-full h-screen flex flex-col items-center bg'>
       <div
         ref={chartRef}
-        className='flex justify-center w-full h-[60%] items-center mt-20'></div>
+        className='flex justify-center w-full min-h-[100vw] mt-10 items-center borderred'></div>
       <Back />
       <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8 top-2 fixed right-4'>
         <img

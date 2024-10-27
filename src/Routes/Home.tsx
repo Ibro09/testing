@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 // import { FaPlus } from "react-icons/fa";
-import sonic from "../images/sonic.png";
+// import sonic from "../images/sonic.png";
+import sonic from "../images/babysonic.png";
 import user from "../icons/user.png";
 import ring from "../icons/rings.png";
 import plus from "../icons/plus.png";

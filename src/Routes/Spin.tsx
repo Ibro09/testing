@@ -239,7 +239,7 @@ const SpinningWheel: React.FC = () => {
 
     svg
       .append("g")
-      .attr("transform", `translate(${w / 0.8},${h / 2 - r})`)
+      .attr("transform", `translate(${w / 1.1},${h / 2})`)
       .append("path")
       .attr("d", `M-${r * 0.15},0L0,${r * 0.05}L0,-${r * 0.05}Z`)
       .style("fill", "black");
@@ -255,7 +255,7 @@ const SpinningWheel: React.FC = () => {
           <h1></h1>
         </div>
         <button
-          className='main-button bubblegum-sans w-[100px] -mt-[170px]'
+          className='main-button bubblegum-sans w-[100px] -mt-[100px]'
           onClick={() => spinRef.current()}>
           <div className='upper btn-upper'>Spin</div>
           <div className='lower btn-lower'></div>

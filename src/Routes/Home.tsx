@@ -207,14 +207,14 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=' flex items-center justify-center fixed bottom-20 pb-10 fixed w-auto left-0 right-0 '>
+        <div className=' flex items-center justify-center fixed bottom-20 pb-[100px] fixed w-auto left-0 right-0 '>
           <div
             className='w-[250px] flex items-center justify-center'
             onClick={handleCardClick}>
             <img
               src={sonic}
               alt=''
-              style={{ width: "300px",height:'auto' }}
+              style={{ width: "350px",height:'auto' }}
             />
           </div>
         </div>

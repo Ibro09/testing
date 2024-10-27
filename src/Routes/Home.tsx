@@ -214,7 +214,7 @@ const App: React.FC = () => {
             <img
               src={sonic}
               alt=''
-              style={{ width: "230px" }}
+              style={{ width: "300px",height:'auto' }}
             />
           </div>
         </div>

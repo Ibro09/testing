@@ -255,7 +255,7 @@ const SpinningWheel: React.FC = () => {
           <h1></h1>
         </div>
         <button
-          className='main-button bubblegum-sans w-[100px] -mt-[100px]'
+          className='main-button bubblegum-sans w-[100px] -mt-[50px]'
           onClick={() => spinRef.current()}>
           <div className='upper btn-upper'>Spin</div>
           <div className='lower btn-lower'></div>

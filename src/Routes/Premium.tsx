@@ -5,8 +5,10 @@ import { TiUserAdd } from "react-icons/ti";
 // import { AiOutlineUserAdd } from "react-icons/ai";
 import Footer from "../components/Footer";
 import Back from "../components/Back";
-import copy from "../icons/copy.png";
 import friends from "../icons/friends.png";
+import treasure from "../icons/treasure.png";
+import cash from "../icons/cash.png";
+import percent from "../icons/percent.png";
 
 const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
@@ -24,39 +26,41 @@ const Friends: React.FC = () => {
         <div className='bg-item w-full px-4 py-4 mb-5 rounded-[10px] '>
           {/* use glass morphism for these */}
           <div className='item'>
-            <div className='txt font-normal px-2 mb-4 flex items-center gap-2'>
+            <div className='txt font-normal px-2 mb-4 flex  gap-2'>
               <img
-                src={friends}
+                src={cash}
                 alt=''
-                className='w-7 h-7'
+                className='w-9 h-8'
               />
               <div>
-                <p className='text-[#ddd] text-[16px] -mt-2 '>
-                  +750 points for you and your friend Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis!
+                <p className='text-white text-[16px] -mt-2 '>
+                  Receive a one-time bonus of 100,000 Coins and 50 Spins.
                 </p>
               </div>
             </div>
-            <div className='txt font-normal px-2 mb-4 flex items-center gap-2'>
+            <div className='txt font-normal px-2 mb-4 flex gap-2'>
               <img
-                src={friends}
+                src={percent}
                 alt=''
-                className='w-7 h-7'
+                className='w-9 h-8'
               />
               <div>
-                <p className='text-[#ddd] text-[16px] -mt-2 '>
-                  +750 points for you and your friend Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis!
+                <p className='text-white text-[16px] -mt-2 '>
+                  Secure permanent eligibility for the Grand Giveaway—an
+                  exclusive event series for MemeFi Premium holders.
                 </p>
               </div>
             </div>
-            <div className='txt font-normal px-2 mb-4 flex items-center gap-2'>
+            <div className='txt font-normal px-2 mb-4 flex gap-2 items-start'>
               <img
-                src={friends}
+                src={treasure}
                 alt=''
-                className='w-7 h-7'
+                className='w-9 h-8'
               />
               <div>
-                <p className='text-[#ddd] text-[16px] -mt-2 '>
-                  +750 points for you and your friend Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, nobis!
+                <p className='text-white text-[16px] -mt-2 '>
+                  Ensure your transaction receives priority in the airdrop claim
+                  queue.
                 </p>
               </div>
             </div>

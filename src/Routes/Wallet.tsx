@@ -6,6 +6,7 @@ import Back from "../components/Back";
 import { Link, useNavigate, useNavigation } from "react-router-dom";
 import { dollarCoin } from "../images";
 import parachute from '../icons/giftparachute.png'
+import bg from "../images/sunbg.png";
 
 const Wallet: React.FC = () => {
   const imageUrl = "https://via.placeholder.com/50";
@@ -21,12 +22,19 @@ const Wallet: React.FC = () => {
    { delay: "1.5s", opacity: "opacity-50", left: "left-1/4" },
    { delay: "2s", opacity: "opacity-30", left: "left-1/2" },
    { delay: "1.5s", opacity: "opacity-90", left: "left-3/4" },
-   { delay: "5s", opacity: "opacity-50", left: "left-1/3" },
+   { delay: ".5s", opacity: "opacity-50", left: "left-1/3" },
  ];
   return (
-    <div className='flex justify-center h-screen overflow-x-hidden  items-center'>
-      <div className='w-full bg-black text-white min-h-screen h-screen font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg relative overflow-x-hidden  max-w-[600px]'>
+    <div className='flex justify-center h-screen overflow-x-hidden  items-center max-h-screen'>
+      <div className='w-full text-white min-h-screen h-screen font-bold flex flex-col max-w-xl bubblegum-sans px-5 items-center relative overflow-x-hidden  max-w-[600px]'>
         <Back />
+        <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
+          <img
+            src={bg}
+            alt=''
+            className='w-full h-full'
+          />
+        </div>
         <div className='flex justify-center h-[10px]  w-[100%]'>
           {images.map((image, index) => (
             <div
@@ -37,7 +45,6 @@ const Wallet: React.FC = () => {
                 src={parachute}
                 alt={`falling image ${index}`}
               />
-             
             </div>
           ))}
         </div>

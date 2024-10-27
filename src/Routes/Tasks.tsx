@@ -10,9 +10,9 @@ const Friends: React.FC = () => {
   const [tasks, setTasks] = useState(1);
   return (
     <div
-      className='flex justify-center'
+      className='flex justify-center h-screen max-h-screen'
       style={{ scrollbarWidth: "none", scrollbarColor: "red" }}>
-      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
+      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center'>
         <Back />
         <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
           <img

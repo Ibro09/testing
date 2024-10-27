@@ -8,7 +8,7 @@ import plus from "../icons/plus.png";
 import coin from "../icons/coin.png";
 import lvl from "../icons/level.png";
 import spin from "../icons/spin.png";
-// import boost from "../icons/boost.png";
+import bg from "../images/sunbg.png";
 import bolt from "../icons/bolt.png";
 
 
@@ -156,9 +156,16 @@ const App: React.FC = () => {
   }, [remPoints]);
 
   return (
-    <div className='flex justify-center overflow-y-hidden overflow-x-hidden'>
-      <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 bg overflow-hidden'>
-        <div className='mt-3'>
+    <div className='flex justify-center overflow-y-hidden overflow-x-hidden h-screen max-h-screen'>
+      <div className=' w-full text-white h-screen font-bold flex flex-col max-w-xl bubblegum-sans bg-cover bg-center px-4 overflow-hidden'>
+        <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
+          <img
+            src={bg}
+            alt=''
+            className='w-full h-full'
+          />
+        </div>
+        <div className='mt-3 z-10'>
           <div className='flex justify-between '>
             <div className='flex items-center bg-white border-2  max-w-[300px] w-[60%] rounded-full border h-8'>
               <img
@@ -166,7 +173,7 @@ const App: React.FC = () => {
                 alt=''
                 className='w-10 h-10 z-[2]'
               />
-              <div className='py-1   align-start w-full px-7 -ml-5'>
+              <div className='py-1  align-start w-full px-7 -ml-5'>
                 <p className='font-normal text-[16px] text-[#2465CF] '>
                   {name}
                 </p>

@@ -4,6 +4,7 @@ import coin from "../icons/coin.png";
 import Back from "../components/Back";
 import ring from "../icons/rings.png";
 import plus from "../icons/plus.png";
+import bg from "../images/sunbg.png";
 
 interface DataItem {
   label: string;
@@ -246,9 +247,17 @@ const SpinningWheel: React.FC = () => {
   }, []);
 
   return (
-    <div className='w-full h-screen flex flex-col items-center bg overflow-hidden'>
-      <div ref={chartRef}
-        className='flex justify-center w-full h-[500px] mt-10 items-center chartref flex-col-reverse'>
+    <div className='w-full h-screen flex flex-col items-center overflow-hidden'>
+      <div className=' fixed top-0 bottom-0 left-0 right-0 -z-1 items-center'>
+        <img
+          src={bg}
+          alt=''
+          className='w-full h-full'
+        />
+      </div>
+      <div
+        ref={chartRef}
+        className='flex justify-center w-full h-[500px] mt-10 items-center chartref flex-col-reverse z-10'>
         <div
           ref={questionRef}
           className='mt-4 text-center zindex fixed tx-shadow text-white text-[20px] right-[50%] top-10'>
@@ -264,7 +273,7 @@ const SpinningWheel: React.FC = () => {
       <Back />
       <div
         ref={questionRef}
-        className=' text-center tx-shadow text-white font-[20px]'>
+        className=' text-center tx-shadow text-white font-[20px] z-10'>
         <h1 className='font-[20px]'></h1>
       </div>
       <div className='flex items-center bg-white rounded-full border-2 max-w-[300px] w-[100px] justify-between border h-8 top-2 fixed right-4'>

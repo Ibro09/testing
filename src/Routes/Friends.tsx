@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-// import { FaCopy, FaUserFriends } from "react-icons/fa";
+
 import { TiUserAdd } from "react-icons/ti";
-// import { AiOutlineUserAdd } from "react-icons/ai";
+import bg from "../images/sunbg.png";
 import Footer from "../components/Footer";
 import Back from "../components/Back";
 import copy from "../icons/copy.png";
@@ -12,15 +12,21 @@ import UserPlus from "../icons/user-plus.png";
 const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
   return (
-    <div className=' flex justify-center'>
-      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
+    <div className=' flex justify-center h-screen max-h-screen'>
+      <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center'>
         <Back />
-        {/* <img src="" alt="" /> sonic logo   */}
-        <h5 className='text-[40px] tb tx-shadow mt-6'>Invite friends</h5>
-        <h5 className='mb-5 text-center text-[14px] text-[#2465CF]'>
+        <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
+          <img
+            src={bg}
+            alt=''
+            className='w-full h-full'
+          />
+        </div>
+        <h5 className='text-[40px] tb tx-shadow mt-6 z-10'>Invite friends</h5>
+        <h5 className='mb-5 text-center text-[14px] text-[#2465CF] z-10'>
           You and your friend would recieve bonuses for invitation
         </h5>
-        <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px]'>
+        <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px] z-10'>
           {/* use glass morphism for these */}
           <div className='item'>
             {/* <img src="" alt="" />  PUT that user that has plus on its head as the image  */}
@@ -58,11 +64,10 @@ const Friends: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <h5 className='text-left font-normal self-start mb-2 text-[#2465CF]'>
+        <h5 className='text-left font-normal self-start mb-2 text-[#2465CF] z-10'>
           List Of Your Friends ({referrals})
         </h5>
-        <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px] mb-[100px]'>
+        <div className='bg-item w-full px-6 py-4 mb-5 rounded-[10px] mb-[100px] z-10'>
           {/* use glass morphism for these */}
 
           {referrals > 0 ? (

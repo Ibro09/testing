@@ -6,6 +6,7 @@ import { Link, useNavigate, useNavigation } from "react-router-dom";
 import { dollarCoin, dailyReward, dailyCipher, dailyCombo } from "../images";
 import left from "../icons/left.png";
 import right from "../icons/right.png";
+import bg from "../images/sunbg.png";
 
 
 
@@ -58,9 +59,16 @@ const Level: React.FC = () => {
   ];
 
   return (
-    <div className='flex justify-center h-screen overflow-x-hidden  items-center'>
-      <div className='w-full bg-black text-white min-h-screen h-screen font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg relative overflow-x-hidden  max-w-[600px]'>
+    <div className='flex justify-center h-screen overflow-x-hidden  items-center max-h-screen'>
+      <div className='w-full text-white min-h-screen h-screen font-bold flex flex-col max-w-xl bubblegum-sans px-5 items-center relative overflow-x-hidden  max-w-[600px]'>
         <Back />
+        <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
+          <img
+            src={bg}
+            alt=''
+            className='w-full h-full'
+          />
+        </div>
         <div className='relative h-2/5 mx-auto  w-full'>
           <div className='overflow-hidden relative w-[100%] flex h-full'>
             {image.map((item, index) => (

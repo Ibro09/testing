@@ -9,13 +9,21 @@ import friends from "../icons/friends.png";
 import treasure from "../icons/treasure.png";
 import cash from "../icons/cash.png";
 import percent from "../icons/percent.png";
+import bg from "../images/sunbg.png";
 
 const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
   return (
-    <div className=' flex justify-center'>
+    <div className=' flex justify-center h-screen max-h-screen'>
       <div className='w-full bg-black text-white min-h-screen h-full font-bold flex flex-col max-w-xl bg-no-repeat bg-cover bg-center bubblegum-sans px-5 items-center bg'>
         <Back />
+        <div className=' fixed top-0 bottom-0 left-0 right-0 z-0 items-center'>
+          <img
+            src={bg}
+            alt=''
+            className='w-full h-full'
+          />
+        </div>
         {/* <img src="" alt="" /> sonic logo   */}
         <h5 className='text-[30px] tb tx-shadow mt-6 text-center'>
           Get access to sonic premium

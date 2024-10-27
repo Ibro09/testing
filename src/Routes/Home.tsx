@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 // import { FaPlus } from "react-icons/fa";
-import { dollarCoin } from "../images";
 import sonic from "../images/sonic.png";
 import user from "../icons/user.png";
 import ring from "../icons/rings.png";
@@ -9,7 +8,7 @@ import plus from "../icons/plus.png";
 import coin from "../icons/coin.png";
 import lvl from "../icons/level.png";
 import spin from "../icons/spin.png";
-import boost from "../icons/boost.png";
+// import boost from "../icons/boost.png";
 import bolt from "../icons/bolt.png";
 
 
@@ -224,7 +223,7 @@ const App: React.FC = () => {
         </div>
         <Footer />
 
-        <div className='cards  fixed top-[calc(45%-4rem)]'>
+        <div className='cards  fixed top-[calc(45%-3rem)]'>
           <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col mb-2 border'>
             <Link to='/level'>
               <img
@@ -246,7 +245,7 @@ const App: React.FC = () => {
             </Link>
           </div>
 
-          <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col border'>
+          {/* <div className='card p-1 rounded-[10px] px-4 flex items-center justify-center flex-col border'>
             <Link to='/spin'>
               <img
                 src={boost}
@@ -255,7 +254,7 @@ const App: React.FC = () => {
               />
               <p className='text-[#2465CF] text-[15px] '>Boost</p>
             </Link>
-          </div>
+          </div> */}
         </div>
         {clicks.map(click => (
           <div

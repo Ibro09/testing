@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Back from "../components/Back";
 
 import bg from '../images/sunbg.png'
+
 const Friends: React.FC = () => {
   const [tasks, setTasks] = useState(1);
   return (

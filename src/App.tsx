@@ -8,6 +8,7 @@ import Spin from "./Routes/Spin";
 import Wallet from "./Routes/Wallet";
 import ModalPage from "./components/Modal";
 import Level from "./Routes/Level";
+import Premium from "./Routes/Premium";
 
 
 
@@ -43,6 +44,10 @@ const App: React.FC = () => {
         <Route
           path='/level'
           element={<Level />}
+        />
+        <Route
+          path='/premium'
+          element={<Premium />}
         />
       </Routes>
     </Router>

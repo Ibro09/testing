@@ -6,7 +6,8 @@ import { TiUserAdd } from "react-icons/ti";
 import Footer from "../components/Footer";
 import Back from "../components/Back";
 import copy from "../icons/copy.png";
-
+import UserFriends from "../icons/user-friends.png";
+import UserPlus from "../icons/user-plus.png";
 
 const Friends: React.FC = () => {
   const [referrals, setReferrals] = useState(1);
@@ -23,17 +24,21 @@ const Friends: React.FC = () => {
           {/* use glass morphism for these */}
           <div className='item'>
             {/* <img src="" alt="" />  PUT that user that has plus on its head as the image  */}
-            <div className='txt font-normal px-4 mb-4'>
-              <p className='text-[17px]'>Share referral link</p>
-              <p className='text-[#ddd] text-[14px] -mt-2'>
-                +750 points for you and your friend
-              </p>
+            <div className='txt font-normal px-2 mb-4 flex items-center'>
+              <div className=''>
+                <p className='text-[17px]'>Share referral link</p>
+                <p className='text-[#ddd] text-[14px] -mt-2'>
+                  +750 points for you and your friend
+                </p>
+              </div>
             </div>
-            <div className='txt font-normal px-4 mb-4'>
-              <p className='text-[17px]'>Invite a friend with premium</p>
-              <p className='text-[#ddd] text-[14px] -mt-2'>
-                +1000 points for you and your friend
-              </p>
+            <div className='txt font-normal px-2 mb-4 flex items-center'>
+              <div className=''>
+                <p className='text-[17px]'>Invite a friend with premium</p>
+                <p className='text-[#ddd] text-[14px] -mt-2'>
+                  +1000 points for you and your friend
+                </p>
+              </div>
             </div>
             <div className='flex items-center'>
               <button className='main-button bubblegum-sans'>
@@ -41,7 +46,13 @@ const Friends: React.FC = () => {
                 <div className='lower  btn-lower'></div>
               </button>
               <div className='main-button copy ml-1'>
-                <div className='upper  btn-upper'><img src={copy} alt="" className="w-6" /></div>
+                <div className='upper  btn-upper'>
+                  <img
+                    src={copy}
+                    alt=''
+                    className='w-6'
+                  />
+                </div>
                 <div className='lower  btn-lower'></div>
               </div>
             </div>
@@ -59,64 +70,102 @@ const Friends: React.FC = () => {
               {/* <img src="" alt="" />  PUT that user that has plus on its head as the image  */}
               <div className='txt font-normal'>
                 <div className='flex justify-between items-center mb-2'>
-                  <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} /> */}
+                  <div className='flex gap-2 items-center'>
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} /> */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} /> */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
+
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} /> */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
+
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>
                 </div>
                 <div className='flex justify-between items-center mb-2'>
                   <div className='flex gap-2'>
-                    {/* <AiOutlineUserAdd size={20} />{" "} */}
+                    <img
+                      src={UserPlus}
+                      alt=''
+                      className='w-8'
+                    />
                     <p className='text-[17px]'>user 474372736</p>
                   </div>
                   <p className='text-[12px] font-normal'>+750 pts</p>

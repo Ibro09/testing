@@ -17,7 +17,7 @@ const Footer: React.FC = ({}) => {
     <div className='fixed bottom-5 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl flex justify-around items-center z-50 rounded-3xl text-xs flex-col bubblegum-sans'>
       <div className='flex justify-around items-center z-50 rounded-3xl text-xs w-[100%] footer border'>
         <div className='text-center w-1/4 m-1 p-1 text-[#2465CF]'>
-          <Link to='/'>
+          <Link to='/premium'>
             <img
               src={premium}
               alt='Exchange'

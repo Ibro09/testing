@@ -27,7 +27,6 @@ const App: React.FC = () => {
   useEffect(() => {
     // Check if the Telegram WebApp API is available
     if (
-      typeof window !== "undefined" &&
       window.Telegram &&
       window.Telegram.WebApp
     ) {
@@ -209,7 +208,7 @@ const App: React.FC = () => {
               />
               <div className='py-1  align-start w-full px-7 -ml-5'>
                 <p className='font-normal text-[16px] text-[#2465CF] '>
-                 {username?.firstName || 'Telegram user'}
+                  {username?.username || "Telegram user"}
                 </p>
               </div>
             </div>
@@ -247,7 +246,7 @@ const App: React.FC = () => {
             <img
               src={sonic}
               alt=''
-              style={{ width: "300px",height:'auto' }}
+              style={{ width: "300px", height: "auto" }}
             />
           </div>
         </div>

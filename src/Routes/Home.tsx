@@ -17,6 +17,39 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const App: React.FC = () => {
+  const [username, setUsername] = useState<{
+    username: string;
+    firstName: string;
+    lastName: string;
+  } | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Check if the Telegram WebApp API is available
+    if (
+      typeof window !== "undefined" &&
+      window.Telegram &&
+      window.Telegram.WebApp
+    ) {
+      const userData = window.Telegram.WebApp.initDataUnsafe.user;
+
+      if (userData) {
+        setUsername({
+          username: userData.username,
+          firstName: userData.first_name,
+          lastName: userData.last_name || "",
+        });
+      } else {
+        setError("User data is not available.");
+      }
+    } else {
+      setError(
+        "Telegram WebApp API is not available. Please open this app within Telegram.",
+      );
+    }
+  }, []);
+
+
   const levelNames = [
     "Bronze", // From 0 to 4999 coins
     "Silver", // From 5000 coins to 24,999 coins
@@ -176,7 +209,7 @@ const App: React.FC = () => {
               />
               <div className='py-1  align-start w-full px-7 -ml-5'>
                 <p className='font-normal text-[16px] text-[#2465CF] '>
-                  {name}
+                 {username?.firstName || 'Telegram user'}
                 </p>
               </div>
             </div>
@@ -207,14 +240,14 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=' flex items-center justify-center fixed bottom-20 pb-[100px] fixed w-auto left-0 right-0 '>
+        <div className=' flex items-center justify-center fixed bottom-20 pb-[50px] fixed w-auto left-0 right-0 '>
           <div
             className='w-[250px] flex items-center justify-center'
             onClick={handleCardClick}>
             <img
               src={sonic}
               alt=''
-              style={{ width: "350px",height:'auto' }}
+              style={{ width: "300px",height:'auto' }}
             />
           </div>
         </div>

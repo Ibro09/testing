@@ -208,7 +208,7 @@ const App: React.FC = () => {
               />
               <div className='py-1  align-start w-full px-7 -ml-5'>
                 <p className='font-normal text-[16px] text-[#2465CF] '>
-                  {username?.username || "Telegram user"}
+                  {username?.username}
                 </p>
               </div>
             </div>
